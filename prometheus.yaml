@@ -11,4 +11,4 @@ scrape_configs:
       - targets: ["handsomelai.shop:9113"]
   - job_name: "linux"
     static_configs:
-      - targets: ["54.253.207.190:9100"]
+      - targets: ["handsomelai.shop:9100"]
