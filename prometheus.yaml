@@ -11,4 +11,4 @@ scrape_configs:
       - targets: ["172.31.11.47:9113"]
   - job_name: "linux"
     static_configs:
-      - targets: [" 172.31.11.47:9100"]
+      - targets: ["172.31.11.47:9100"]
