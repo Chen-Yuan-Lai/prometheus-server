@@ -232,7 +232,7 @@
         "uid": "djoI8bg4k"
       },
       "editorMode": "code",
-      "expr": "(sum by (instance) (node_cpu_seconds_total{job=\"node\",mode!=\"idle\"})) / (sum by (instance) (node_cpu_seconds_total{job=\"node\"}) ) * 100 ",
+      "expr": "(sum by (instance) (node_cpu_seconds_total{job='node',mode!='idle'})) / (sum by (instance) (node_cpu_seconds_total{job='node'}) ) * 100 ",
       "format": "table",
       "hide": false,
       "legendFormat": "CPU",
@@ -245,7 +245,7 @@
         "uid": "djoI8bg4k"
       },
       "editorMode": "code",
-      "expr": "((((sum by (instance) (node_memory_MemTotal_bytes{job=\"node\"})) - (sum by (instance)(node_memory_MemFree_bytes{job=\"node\"}))) / (sum by (instance) (node_memory_MemTotal_bytes{job=\"node\"}))) * 100)",
+      "expr": "((((sum by (instance) (node_memory_MemTotal_bytes{job='node'})) - (sum by (instance)(node_memory_MemFree_bytes{job='node'}))) / (sum by (instance) (node_memory_MemTotal_bytes{job='node'}))) * 100)",
       "format": "table",
       "hide": false,
       "legendFormat": "Memory",
@@ -258,7 +258,7 @@
         "uid": "djoI8bg4k"
       },
       "editorMode": "code",
-      "expr": "((((sum by (instance) (node_filesystem_size_bytes{job=\"node\"})) - (sum by (instance) (node_filesystem_free_bytes{job=\"node\"}))) / (sum by (instance) (node_filesystem_size_bytes{job=\"node\"}))) * 100)",
+      "expr": "((((sum by (instance) (node_filesystem_size_bytes{job='node'})) - (sum by (instance) (node_filesystem_free_bytes{job='node'}))) / (sum by (instance) (node_filesystem_size_bytes{job='node'}))) * 100)",
       "format": "table",
       "hide": false,
       "legendFormat": "Disk",
@@ -271,7 +271,7 @@
         "uid": "djoI8bg4k"
       },
       "editorMode": "code",
-      "expr": " sum by (instance)(count without (job,mode) (node_cpu_seconds_total{job=\"node\",mode=\"idle\"}))",
+      "expr": " sum by (instance)(count without (job,mode) (node_cpu_seconds_total{job='node',mode='idle'}))",
       "format": "table",
       "hide": false,
       "range": true,
