@@ -1,5 +1,5 @@
 global:
-  scrape_interval: 10s # Server 抓取頻率
+  scrape_interval: 5s # Server 抓取頻率
   external_labels:
     monitor: "my-monitor"
 scrape_configs:
